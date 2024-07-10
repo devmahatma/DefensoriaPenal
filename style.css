@@ -3,6 +3,15 @@ html {
   width: 100%;
 }
 
+.quienes_somos {
+  background: url("static/body/fondo_1.jpg") center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
 /* Media query para pantallas de celular */
 @media (max-width: 767px) {
     .offcanvas {
@@ -17,12 +26,6 @@ html {
         margin-top: auto;
         height: 100vh
     }
-}
-
-
-body {
-  background-color: black;
-
 }
 
 .footer-content {
