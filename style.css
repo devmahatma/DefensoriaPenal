@@ -10,7 +10,21 @@ html {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  opacity: 0.5;
+  position: relative; /* Importante para que .texto_sobre_fondo se posicione correctamente */
 }
+
+.texto_sobre_fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #D35400;
+  z-index: 1; /* Asegura que el texto esté sobre la imagen de fondo */
+}
+
+
 
 /* Media query para pantallas de celular */
 @media (max-width: 767px) {
