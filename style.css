@@ -27,7 +27,7 @@ html {
   left: 0;
   width: 100%;
   text-align: center;
-  color: #D35400;
+  color: white;
   z-index: 1; /* Asegura que el texto esté sobre la imagen de fondo */
 }
 
