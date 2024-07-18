@@ -3,6 +3,13 @@ html {
   width: 100%;
 }
 
+.arbutus-slab-regular {
+  font-family: "Arbutus Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .quienes_somos {
   background: url("static/body/fondo_1.jpg") center center/cover;
   display: flex;
@@ -10,7 +17,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  opacity: 0.5;
+  opacity: 0.4;
   position: relative; /* Importante para que .texto_sobre_fondo se posicione correctamente */
 }
 
