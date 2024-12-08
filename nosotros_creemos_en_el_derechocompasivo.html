@@ -110,6 +110,53 @@
       Por lo tanto nuestros servicios, también se enfocan en sensibilizar por medio de la compasión a aquellos servidores públicos que tienden a estigmatizar y denostar a las personas involucradas en la comisión de delitos.
   </p>
   </section>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          height: 200vh; /* Para simular una página más larga */
+      }
+
+      .whatsapp-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #25d366;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          z-index: 1000;
+          transition: transform 0.3s ease;
+      }
+
+      .whatsapp-button:hover {
+          transform: scale(1.1);
+      }
+      .whatsapp-button img {
+              width: 30px;
+              height: 30px;
+          }
+      </style>
+    <div class="whatsapp-button" id="whatsappButton">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+    <script>
+      document.getElementById('whatsappButton').addEventListener('click', function() {
+          const phoneNumber = "+525634913346"; // Cambia este número por el tuyo
+          const message = encodeURIComponent("¡Hola! Me gustaría más información.");
+          const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+          window.open(whatsappURL, '_blank');
+      });
+    </script>
   </body>
   <footer style="background-color: black;">
     <section style="text-align: center;">

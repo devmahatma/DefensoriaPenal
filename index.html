@@ -358,15 +358,89 @@
     <br>
     <h1 class="fw-bold text-uppercase" style="color:white">ALIANZAS</h1>
     <br>
-    <img style="text-align: center; width: 20%; height: 20%; margin-left: 2px; margin-right: 2px;" src="static/body/alianza_1.png" alt="img">
-    <img style="text-align: center; width: 20%; height: 20%; margin-left: 2px; margin-right: 2px;" src="static/body/alianza_2.png" alt="img">
-    <!--
-    <img style="text-align: center; width: 20%; height: 20%;" src="#" alt="img">
-    <img style="text-align: center; width: 20%; height: 20%;" src="#" alt="img">
-    -->
+    <img 
+    style="text-align: center; 
+        width: 20%; height: 20%; 
+        margin-left: 2px; margin-right: 2px;" 
+    src="static/body/alianza_1.png" 
+    alt="img">
+
+    <img 
+    style="text-align: center; 
+          width: 20%; height: 20%; 
+          margin-left: 2px; margin-right: 2px;" 
+    src="static/body/alianza_2.png" 
+    alt="img">
+
+    <img 
+    style="text-align: center; 
+          width: 20%; height: 20%; 
+          margin-left: 2px; margin-right: 2px; 
+          background-color: white;
+          mask-size: contain;
+          border: 5px solid white;
+          border-radius: inherit;
+          pointer-events: none;"
+    src="static/body/alianza_3.png" 
+    alt="img">
+
+    <img 
+    style="text-align: center; 
+          width: 20%; height: 20%; 
+          margin-left: 2px; margin-right: 2px;" 
+    src="static/body/alianza_4.png" 
+    alt="img">
+
     <br>
     <br>
   </section>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 200vh; /* Para simular una página más larga */
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.1);
+    }
+    .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+  <div class="whatsapp-button" id="whatsappButton">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </div>
+
+  <script>
+    document.getElementById('whatsappButton').addEventListener('click', function() {
+        const phoneNumber = "+525634913346"; // Cambia este número por el tuyo
+        const message = encodeURIComponent("¡Hola! Me gustaría más información.");
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(whatsappURL, '_blank');
+    });
+  </script>
   <section style="background-color: white; text-align: center;" class="ficosec" id="contacto">
     <br>
     <h1 class="fw-bold text-uppercase" style="color:black">CONTÁCTANOS</h1>
